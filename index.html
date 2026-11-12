@@ -1,0 +1,1436 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="AutoCare, sistema de gestión de mantenimiento automotriz.">
+
+    <title>AutoCare | Mantenimiento Automotriz</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- ============================================
+         1. BARRA DE NAVEGACIÓN
+         ============================================ -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-autocare">
+
+            <div class="container">
+
+                <!-- Logo del sistema -->
+                <a class="navbar-brand fw-bold" href="#inicio">
+
+                    <i class="bi bi-car-front-fill me-2"></i>
+                    AutoCare
+
+                </a>
+
+                <!-- Botón para dispositivos móviles -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                >
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- Opciones de navegación -->
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+
+                            <button
+                                class="btn btn-login"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalLogin"
+                            >
+
+                                <i class="bi bi-person-circle me-2"></i>
+                                Iniciar sesión
+
+                            </button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ============================================
+         2. CONTENIDO PRINCIPAL
+         ============================================ -->
+
+    <main>
+
+        <!-- ============================================
+             2.1 SECCIÓN DE INICIO
+             ============================================ -->
+
+        <section id="inicio" class="hero">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-7">
+
+                        <span class="hero-etiqueta">
+                            Cuidado y mantenimiento automotriz
+                        </span>
+
+                        <h1>
+                            El cuidado de tu vehículo comienza aquí.
+                        </h1>
+
+                        <p>
+                            En AutoCare facilitamos la gestión de tus
+                            mantenimientos automotrices mediante un
+                            sistema sencillo, organizado y eficiente.
+                        </p>
+
+                        <div class="mt-4">
+
+                            <button
+                                class="btn btn-principal btn-lg"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalLogin"
+                            >
+
+                                Comenzar ahora
+                                <i class="bi bi-arrow-right ms-2"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 text-center">
+
+                        <div class="hero-imagen">
+
+                            <i class="bi bi-car-front-fill"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================================
+             2.2 SECCIÓN DE SERVICIOS
+             ============================================ -->
+
+        <section id="servicios" class="seccion-servicios">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <span class="subtitulo">Nuestros servicios</span>
+
+                    <h2 class="titulo-seccion">
+                        Soluciones para tu vehículo
+                    </h2>
+
+                    <p class="texto-seccion">
+                        Encuentra los servicios necesarios para mantener
+                        tu automóvil en buenas condiciones.
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Servicio 1 -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="tarjeta-servicio">
+
+                            <i class="bi bi-droplet-half"></i>
+
+                            <h5>Cambio de aceite</h5>
+
+                            <p>
+                                Servicio de mantenimiento para el sistema
+                                de lubricación del motor.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Servicio 2 -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="tarjeta-servicio">
+
+                            <i class="bi bi-disc"></i>
+
+                            <h5>Sistema de frenos</h5>
+
+                            <p>
+                                Revisión y mantenimiento de los componentes
+                                del sistema de frenado.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Servicio 3 -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="tarjeta-servicio">
+
+                            <i class="bi bi-gear-wide-connected"></i>
+
+                            <h5>Revisión mecánica</h5>
+
+                            <p>
+                                Inspección general de los componentes
+                                mecánicos del vehículo.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Servicio 4 -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="tarjeta-servicio">
+
+                            <i class="bi bi-lightning-charge"></i>
+
+                            <h5>Sistema eléctrico</h5>
+
+                            <p>
+                                Diagnóstico y revisión de los componentes
+                                eléctricos del automóvil.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Servicio 5 -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="tarjeta-servicio">
+
+                            <i class="bi bi-circle"></i>
+
+                            <h5>Neumáticos</h5>
+
+                            <p>
+                                Revisión del estado de los neumáticos
+                                y sus condiciones de funcionamiento.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Servicio 6 -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="tarjeta-servicio">
+
+                            <i class="bi bi-tools"></i>
+
+                            <h5>Mantenimiento general</h5>
+
+                            <p>
+                                Servicios preventivos para conservar
+                                el vehículo en buenas condiciones.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================================
+             2.3 SECCIÓN NOSOTROS
+             ============================================ -->
+
+        <section id="nosotros" class="seccion-nosotros">
+
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-6">
+
+                        <div class="nosotros-imagen">
+
+                            <i class="bi bi-tools"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <span class="subtitulo">Sobre nosotros</span>
+
+                        <h2 class="titulo-seccion">
+                            Tecnología al servicio de tu vehículo
+                        </h2>
+
+                        <p>
+                            AutoCare es una propuesta tecnológica orientada
+                            a facilitar la administración de los servicios
+                            y mantenimientos automotrices.
+                        </p>
+
+                        <p>
+                            Nuestro objetivo es ofrecer una herramienta
+                            digital que permita organizar la información
+                            de los clientes, vehículos y solicitudes
+                            de mantenimiento.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================================
+             2.4 SECCIÓN DE CONTACTO
+             ============================================ -->
+
+        <section id="contacto" class="seccion-contacto">
+
+            <div class="container">
+
+                <div class="text-center">
+
+                    <span class="subtitulo">Contáctanos</span>
+
+                    <h2 class="titulo-seccion">
+                        Estamos para ayudarte
+                    </h2>
+
+                    <p>
+                        AutoCare trabaja para mejorar la experiencia
+                        de gestión del mantenimiento automotriz.
+                    </p>
+
+                    <div class="contacto-info">
+
+                        <p>
+                            <i class="bi bi-envelope-fill"></i>
+                            contacto@autocare.com
+                        </p>
+
+                        <p>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Quito, Ecuador
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ============================================
+         3. MODAL DE INICIO DE SESIÓN
+         ============================================ -->
+
+    <div
+        class="modal fade"
+        id="modalLogin"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content modal-autocare">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        <i class="bi bi-person-circle me-2"></i>
+                        Iniciar sesión
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                    ></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="formLogin">
+
+                        <!-- Correo electrónico -->
+                        <div class="mb-3">
+
+                            <label for="loginCorreo" class="form-label">
+                                Correo electrónico
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="loginCorreo"
+                                placeholder="correo@ejemplo.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Contraseña -->
+                        <div class="mb-3">
+
+                            <label for="loginPassword" class="form-label">
+                                Contraseña
+                            </label>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="loginPassword"
+                                placeholder="Ingresa tu contraseña"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Botón de acceso -->
+                        <button
+                            type="submit"
+                            class="btn btn-principal w-100"
+                        >
+
+                            Ingresar al sistema
+
+                        </button>
+
+                    </form>
+
+                    <div class="text-center mt-4">
+
+                        <p class="mb-0">
+
+                            ¿No tienes una cuenta?
+
+                            <button
+                                type="button"
+                                class="btn-link-autocare"
+                                id="abrirRegistro"
+                            >
+
+                                Regístrate aquí
+
+                            </button>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================================
+         4. MODAL DE REGISTRO
+         ============================================ -->
+
+    <div
+        class="modal fade"
+        id="modalRegistro"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content modal-autocare">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        <i class="bi bi-person-plus-fill me-2"></i>
+                        Crear cuenta
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                    ></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="formRegistro">
+
+                        <!-- Nombre -->
+                        <div class="mb-3">
+
+                            <label for="registroNombre" class="form-label">
+                                Nombre completo
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="registroNombre"
+                                placeholder="Ingresa tu nombre"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Correo -->
+                        <div class="mb-3">
+
+                            <label for="registroCorreo" class="form-label">
+                                Correo electrónico
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="registroCorreo"
+                                placeholder="correo@ejemplo.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Teléfono -->
+                        <div class="mb-3">
+
+                            <label for="registroTelefono" class="form-label">
+                                Teléfono
+                            </label>
+
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="registroTelefono"
+                                placeholder="Ingresa tu teléfono"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Contraseña -->
+                        <div class="mb-3">
+
+                            <label for="registroPassword" class="form-label">
+                                Contraseña
+                            </label>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="registroPassword"
+                                placeholder="Crea una contraseña"
+                                required
+                                minlength="6"
+                            >
+
+                        </div>
+
+
+                        <!-- Confirmación de contraseña -->
+                        <div class="mb-3">
+
+                            <label for="registroConfirmar" class="form-label">
+                                Confirmar contraseña
+                            </label>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="registroConfirmar"
+                                placeholder="Repite tu contraseña"
+                                required
+                                minlength="6"
+                            >
+
+                        </div>
+
+
+                        <!-- Botón de registro -->
+                        <button
+                            type="submit"
+                            class="btn btn-principal w-100"
+                        >
+
+                            Crear cuenta
+
+                        </button>
+
+                    </form>
+
+                    <div class="text-center mt-4">
+
+                        <p class="mb-0">
+
+                            ¿Ya tienes una cuenta?
+
+                            <button
+                                type="button"
+                                class="btn-link-autocare"
+                                id="volverLogin"
+                            >
+
+                                Inicia sesión
+
+                            </button>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================================
+         5. PANEL DEL CLIENTE
+         ============================================ -->
+
+    <section id="panelCliente" class="panel-cliente d-none">
+
+        <div class="container">
+
+            <!-- Encabezado del panel -->
+            <div class="panel-encabezado">
+
+                <div>
+
+                    <span class="subtitulo">Panel de usuario</span>
+
+                    <h2>
+                        Bienvenido,
+                        <span id="nombreUsuario"></span>
+                    </h2>
+
+                    <p>
+                        Administra tus vehículos y consulta
+                        la información de tus mantenimientos.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="btn-cerrar-sesion"
+                    onclick="cerrarSesion()"
+                >
+
+                    <i class="bi bi-box-arrow-right me-2"></i>
+                    Cerrar sesión
+
+                </button>
+
+            </div>
+
+
+            <!-- ============================================
+                 5.1 INDICADORES DEL CLIENTE
+                 ============================================ -->
+
+            <div class="row g-4 mb-5">
+
+                <!-- Total de mantenimientos -->
+                <div class="col-md-4">
+
+                    <div class="tarjeta-panel">
+
+                        <div class="icono-panel">
+                            <i class="bi bi-clipboard-data"></i>
+                        </div>
+
+                        <div>
+
+                            <h6>Total de mantenimientos</h6>
+
+                            <h3 id="totalMantenimientos">0</h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Mantenimientos pendientes -->
+                <div class="col-md-4">
+
+                    <div class="tarjeta-panel">
+
+                        <div class="icono-panel">
+                            <i class="bi bi-clock-history"></i>
+                        </div>
+
+                        <div>
+
+                            <h6>Pendientes</h6>
+
+                            <h3 id="totalPendientes">0</h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Mantenimientos finalizados -->
+                <div class="col-md-4">
+
+                    <div class="tarjeta-panel">
+
+                        <div class="icono-panel">
+                            <i class="bi bi-check-circle"></i>
+                        </div>
+
+                        <div>
+
+                            <h6>Finalizados</h6>
+
+                            <h3 id="totalFinalizados">0</h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ============================================
+                 5.2 MÓDULO DE REGISTRO DE VEHÍCULOS
+                 ============================================ -->
+
+            <section class="mb-5">
+
+                <div class="mb-4">
+
+                    <h3 class="fw-bold">
+                        <i class="bi bi-car-front me-2"></i>
+                        Mis vehículos
+                    </h3>
+
+                    <p class="text-muted">
+                        Administra los vehículos asociados a tu cuenta.
+                    </p>
+
+                </div>
+
+
+                <!-- Formulario de vehículos -->
+                <div class="card border-0 shadow-sm mb-4">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold mb-3">
+                            Registrar nuevo vehículo
+                        </h5>
+
+                        <form id="formVehiculo">
+
+                            <div class="row g-3">
+
+                                <!-- Placa -->
+                                <div class="col-md-4">
+
+                                    <label for="vehiculoPlaca" class="form-label">
+                                        Placa
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="vehiculoPlaca"
+                                        placeholder="Ej. ABC1234"
+                                        maxlength="10"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <!-- Marca -->
+                                <div class="col-md-4">
+
+                                    <label for="vehiculoMarca" class="form-label">
+                                        Marca
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="vehiculoMarca"
+                                        placeholder="Ej. Toyota"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <!-- Modelo -->
+                                <div class="col-md-4">
+
+                                    <label for="vehiculoModelo" class="form-label">
+                                        Modelo
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="vehiculoModelo"
+                                        placeholder="Ej. Corolla"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <!-- Año -->
+                                <div class="col-md-6">
+
+                                    <label for="vehiculoAnio" class="form-label">
+                                        Año
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="vehiculoAnio"
+                                        min="1950"
+                                        max="2099"
+                                        placeholder="Ej. 2022"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <!-- Color -->
+                                <div class="col-md-6">
+
+                                    <label for="vehiculoColor" class="form-label">
+                                        Color
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="vehiculoColor"
+                                        placeholder="Ej. Negro"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <!-- Botón -->
+                                <div class="col-12">
+
+                                    <button
+                                        type="submit"
+                                        class="btn btn-principal"
+                                    >
+
+                                        <i class="bi bi-plus-circle me-2"></i>
+                                        Registrar vehículo
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tabla de vehículos -->
+                <div class="card border-0 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <h5 class="fw-bold mb-3">
+                            Vehículos registrados
+                        </h5>
+
+                        <div class="table-responsive">
+
+                            <table class="table tabla-mantenimientos align-middle">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>Placa</th>
+                                        <th>Marca</th>
+                                        <th>Modelo</th>
+                                        <th>Año</th>
+                                        <th>Color</th>
+                                    </tr>
+
+                                </thead>
+
+                                <tbody id="tablaMisVehiculos">
+
+                                    <!-- Registros generados con JavaScript. -->
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+<!-- ============================================
+     17. MÓDULO DE SOLICITUD DE MANTENIMIENTO
+     ============================================ -->
+
+<section class="modulo-mantenimiento">
+
+    <!-- Título del módulo -->
+    <div class="titulo-modulo">
+        <h3>Solicitar mantenimiento</h3>
+        <p>Registra una nueva solicitud para uno de tus vehículos.</p>
+    </div>
+
+    <!-- Formulario de mantenimiento -->
+    <form id="formMantenimiento">
+
+        <div class="row g-3">
+
+            <!-- Selección del vehículo -->
+            <div class="col-md-6">
+                <label for="mantenimientoVehiculo" class="form-label">
+                    Seleccionar vehículo
+                </label>
+
+                <select
+                    class="form-select"
+                    id="mantenimientoVehiculo"
+                    required
+                >
+                    <option value="">Selecciona un vehículo</option>
+                </select>
+            </div>
+
+            <!-- Selección del servicio -->
+            <div class="col-md-6">
+                <label for="mantenimientoServicio" class="form-label">
+                    Tipo de mantenimiento
+                </label>
+
+                <select
+                    class="form-select"
+                    id="mantenimientoServicio"
+                    required
+                >
+                    <option value="">Selecciona un servicio</option>
+                    <option value="Cambio de aceite">Cambio de aceite</option>
+                    <option value="Revisión de frenos">Revisión de frenos</option>
+                    <option value="Revisión mecánica">Revisión mecánica</option>
+                    <option value="Sistema eléctrico">Sistema eléctrico</option>
+                    <option value="Revisión de neumáticos">Revisión de neumáticos</option>
+                    <option value="Mantenimiento general">Mantenimiento general</option>
+                </select>
+            </div>
+
+            <!-- Fecha de solicitud -->
+            <div class="col-md-6">
+                <label for="mantenimientoFecha" class="form-label">
+                    Fecha de solicitud
+                </label>
+
+                <input
+                    type="date"
+                    class="form-control"
+                    id="mantenimientoFecha"
+                    required
+                >
+            </div>
+
+            <!-- Descripción del problema -->
+            <div class="col-12">
+                <label for="mantenimientoDescripcion" class="form-label">
+                    Descripción del problema
+                </label>
+
+                <textarea
+                    class="form-control"
+                    id="mantenimientoDescripcion"
+                    rows="3"
+                    placeholder="Describe el problema o mantenimiento que necesita tu vehículo..."
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Botón de registro -->
+            <div class="col-12">
+                <button type="submit" class="btn btn-autocare">
+                    Registrar solicitud
+                </button>
+            </div>
+
+        </div>
+
+    </form>
+
+</section>
+            <!-- ============================================
+                 5.3 HISTORIAL DE MANTENIMIENTOS
+                 ============================================ -->
+
+            <section class="mb-5">
+
+                <h3 class="fw-bold mb-4">
+                    <i class="bi bi-clipboard-check me-2"></i>
+                    Mis mantenimientos
+                </h3>
+
+                <div class="card border-0 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <div class="table-responsive">
+
+                            <table class="table tabla-mantenimientos align-middle">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Vehículo</th>
+                                        <th>Servicio</th>
+                                        <th>Fecha</th>
+                                        <th>Estado</th>
+                                    </tr>
+
+                                </thead>
+
+                                <tbody id="tablaMisMantenimientos">
+
+                                    <!-- Registros generados con JavaScript. -->
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+<!-- ============================================
+     6. PANEL ADMINISTRATIVO
+     ============================================ -->
+
+<section id="panelAdmin" class="py-5 d-none">
+
+    <div class="container">
+
+        <!-- ENCABEZADO -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-5">
+
+            <div>
+                <span class="subtitulo">Administración de AutoCare</span>
+
+                <h2 class="fw-bold">
+                    Bienvenido,
+                    <span id="nombreAdministrador"></span>
+                </h2>
+
+                <p class="text-muted mb-0">
+                    Gestiona los usuarios, vehículos y mantenimientos del sistema.
+                </p>
+            </div>
+
+            <button
+                type="button"
+                class="btn btn-danger"
+                onclick="cerrarSesion()"
+            >
+                <i class="bi bi-box-arrow-right me-2"></i>
+                Cerrar sesión
+            </button>
+
+        </div>
+
+
+        <!-- INDICADORES -->
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="bi bi-people-fill fs-1 text-primary"></i>
+                            <div>
+                                <h6 class="text-muted mb-1">Total de clientes</h6>
+                                <h3 id="adminTotalUsuarios" class="fw-bold mb-0">0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="bi bi-car-front-fill fs-1 text-success"></i>
+                            <div>
+                                <h6 class="text-muted mb-1">Total de vehículos</h6>
+                                <h3 id="adminTotalVehiculos" class="fw-bold mb-0">0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="bi bi-clipboard-check-fill fs-1 text-warning"></i>
+                            <div>
+                                <h6 class="text-muted mb-1">Mantenimientos</h6>
+                                <h3 id="adminTotalMantenimientos" class="fw-bold mb-0">0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- GESTIÓN DE USUARIOS -->
+        <section class="card border-0 shadow-sm mb-5">
+
+            <div class="card-body p-4">
+
+                <div class="mb-4">
+                    <h4 class="fw-bold">
+                        <i class="bi bi-people me-2"></i>
+                        Gestión de clientes
+                    </h4>
+
+                    <p class="text-muted mb-0">
+                        Consulta y administra los clientes registrados.
+                        La cuenta del administrador está protegida.
+                    </p>
+                </div>
+
+                <div class="table-responsive">
+
+                    <table class="table table-hover align-middle">
+
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Correo electrónico</th>
+                                <th>Teléfono</th>
+                                <th>Rol</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tablaUsuariosAdmin">
+                            <tr>
+                                <td colspan="5" class="text-center">
+                                    Cargando clientes...
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GESTIÓN DE VEHÍCULOS -->
+        <section class="card border-0 shadow-sm mb-5">
+
+            <div class="card-body p-4">
+
+                <div class="mb-4">
+                    <h4 class="fw-bold">
+                        <i class="bi bi-car-front me-2"></i>
+                        Gestión de vehículos
+                    </h4>
+
+                    <p class="text-muted mb-0">
+                        Consulta los vehículos registrados por los clientes.
+                    </p>
+                </div>
+
+                <div class="table-responsive">
+
+                    <table class="table table-hover align-middle">
+
+                        <thead>
+                            <tr>
+                                <th>Placa</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Año</th>
+                                <th>Propietario</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tablaVehiculosAdmin">
+                            <tr>
+                                <td colspan="6" class="text-center">
+                                    Cargando vehículos...
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GESTIÓN DE MANTENIMIENTOS -->
+        <section class="card border-0 shadow-sm mb-5">
+
+            <div class="card-body p-4">
+
+                <div class="mb-4">
+                    <h4 class="fw-bold">
+                        <i class="bi bi-tools me-2"></i>
+                        Gestión de mantenimientos
+                    </h4>
+
+                    <p class="text-muted mb-0">
+                        Consulta las solicitudes y actualiza sus estados.
+                    </p>
+                </div>
+
+                <div class="table-responsive">
+
+                    <table class="table table-hover align-middle">
+
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Cliente</th>
+                                <th>Vehículo</th>
+                                <th>Servicio</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tablaMantenimientosAdmin">
+                            <tr>
+                                <td colspan="6" class="text-center">
+                                    Cargando mantenimientos...
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</section>
+
+<!-- FIN DEL PANEL ADMINISTRATIVO -->
+
+
+    <!-- ============================================
+         6. PIE DE PÁGINA
+         ============================================ -->
+
+    <footer id="footer" class="footer-autocare">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+
+                    <h5>
+                        <i class="bi bi-car-front-fill me-2"></i>
+                        AutoCare
+                    </h5>
+
+                    <p>
+                        Sistema de gestión de mantenimiento automotriz.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 text-md-end">
+
+                    <p class="mb-0">
+                        © <span id="anioActual"></span> AutoCare.
+                        Todos los derechos reservados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ============================================
+         7. LIBRERÍAS JAVASCRIPT
+         ============================================ -->
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Archivo JavaScript principal -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
